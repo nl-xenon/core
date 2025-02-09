@@ -5,6 +5,7 @@ const ConfigSchema = z.object({
   logger: z.object({
     level: z.enum(["debug", "info", "warn", "error"]).default("info"),
   }),
+  hr: z.boolean().default(true),
 });
 
 export type NLXConfig = z.infer<typeof ConfigSchema>;

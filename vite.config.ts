@@ -15,11 +15,4 @@ export default defineConfig({
       },
     }),
   ],
-  server: {
-    watch: {
-      usePolling: true,
-      ignored: ["node_modules/**", ".nlxenon/**"],
-    },
-    hmr: true,
-  },
 });
