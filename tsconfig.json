@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    // Базовые настройки
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+
+    // Пути и разрешения
+    "outDir": "./dist/types",
+    "declarationDir": "./dist/types",
+    "paths": {
+      "@nlxenon/core/*": ["./src/*"],
+      "@nlxenon/core/": ["./src/"]
+    },
+
+    // Генерация типов
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+
+    // Совместимость с Vue и SSR
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "types": ["node", "vite/client"],
+
+    // Строгая проверка типов
+    "strict": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": false,
+
+    // Особенности проекта
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*", "src/**/*.d.ts"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+}

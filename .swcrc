@@ -1,0 +1,21 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": true,
+      "dynamicImport": true
+    },
+    "target": "esnext",
+    "baseUrl": "./src",
+    "paths": {
+      "@nlxenon/core": ["./src/index.ts"],
+      "@nlxenon/core/*": ["./src/*"]
+    }
+  },
+  "module": {
+    "type": "es6",
+    "strict": true,
+    "strictMode": true
+  }
+}
